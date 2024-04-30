@@ -1,4 +1,4 @@
-import React from 'react' 
+import React from 'react'
 
 type InteractiveExplorerProps = {
     food: string[];
@@ -6,18 +6,13 @@ type InteractiveExplorerProps = {
     price: number[];
 }
 
-function InteractiveExplorer (interXP:InteractiveExplorerProps)  {
-    let foodCard : HTMLElement = document.createElement('div')
-    interXP.food.forEach(function(f){
-        foodCard.innerHTML = `<h3>${f}</h3>`
-    })
-    return(
+const InteractiveExplorer: React.FC<InteractiveExplorerProps> = (interXP) => {
+    // let foodCard: HTMLElement = document.createElement('div')
+    return (
         <div>
-            foodCard
+            <h3>{interXP.disc}</h3>
         </div>
     )
 }
-
-
 
 export default InteractiveExplorer;

@@ -11,20 +11,20 @@ type InteractiveExplorerProps = {
 }
 
 
- function Home() {
-  let interXP : InteractiveExplorerProps = {
-    'food' : ['Food1', 'Food2', 'Food3'],
-    'disc' : ['Disc1', 'Disc2', 'Disc3'],
-    'price' : [1, 2, 3],
+function Home() {
+  let interXP: InteractiveExplorerProps = {
+    'food': ['Food1', 'Food2', 'Food3'],
+    'disc': ['Disc1', 'Disc2', 'Disc3'],
+    'price': [1, 2, 3],
   }
   return (
-      <>
+    <>
       <NavBar />
       <hr />
-      
+
 
       <InteractiveExplorer {...interXP} />
-      </>
+    </>
 
   );
 }
