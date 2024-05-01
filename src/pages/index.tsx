@@ -24,6 +24,7 @@ function Home() {
 
 
       <InteractiveExplorer {...interXP} />
+      <hr />
     </>
 
   );
